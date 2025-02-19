@@ -1,0 +1,525 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  .HomePage-1{
+    height: 700px;
+    width: 96vw;
+    margin-bottom: 30px;
+  }
+  /* ------------------- BASE STYLES ------------------- */
+.slide {
+    position: relative;
+    background-size: cover;
+    background-position: center;
+    height: 80vh; /* Default for large screens */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  }
+  
+  /* Dark overlay for better text visibility */
+  .slide::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5); /* Adjust opacity */
+  }
+  
+  /* ------------------- BACKGROUND IMAGES ------------------- */
+  /* Default for large screens */
+  .slide-1 {
+    background-image: url('../../../assets/slide-1.jpg');
+  }
+
+  .slide-2 {
+    background-image: url('../../../assets/slide-2.png');
+  }
+
+  .slide-3 {
+    background-image: url('../../../assets/slide-3.jpeg');
+  }
+  
+  /* ------------------- TEXT & BUTTON ANIMATIONS ------------------- */
+  .animate-top {
+    opacity: 0;
+    transform: translateY(-50px);
+    animation: fadeInTop 1s ease-out forwards;
+  }
+  
+  .animated-button {
+    opacity: 0;
+    transform: translateY(50px);
+    animation: fadeInBottom 1s ease-out 0.5s forwards;
+    border: 2px solid white!important; /* Red border */
+    color: white !important;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: 0.3s;
+  }
+  
+  .animated-button:hover {
+    background-color:  rgba(241, 61, 100, 0.603) !important;
+    color: white;
+    border: none!important;
+  }
+  
+  /* ------------------- KEYFRAME ANIMATIONS ------------------- */
+  @keyframes fadeInTop {
+    from {
+      opacity: 0;
+      transform: translateY(-50px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  @keyframes fadeInBottom {
+    from {
+      opacity: 0;
+      transform: translateY(50px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  /* ------------------- RESPONSIVE MEDIA QUERIES ------------------- */
+  
+  /* 📌 Small Devices (320px - 425px) */
+  @media (max-width: 425px) {
+    .slide {
+      height: 60vh; /* Reduce height for smaller screens */
+    }
+  
+    /* Use smaller background images for faster loading */
+    .slide-1 {
+        background-image: url('../../../assets/slide-1.jpg');
+      }
+    
+      .slide-2 {
+        background-image: url('../../../assets/slide-2.png');
+      }
+    
+      .slide-3 {
+        background-image: url('../../../assets/slide-3.jpeg');
+      }
+  
+    h3 {
+      font-size: 20px;
+    }
+  
+    .animated-button {
+      padding: 8px 15px;
+      font-size: 14px;
+    }
+  }
+  
+  /* 📌 Medium Devices (426px - 768px) */
+  @media (max-width: 768px) {
+    .slide {
+      height: 55vh; /* Slightly taller on tablets */
+    }
+  
+    /* Use medium-sized background images */
+    .slide-1 {
+      background-image: url('../../../assets/slide-1.jpg');
+    }
+  
+    .slide-2 {
+      background-image: url('../../../assets/slide-2.png');
+    }
+  
+    .slide-3 {
+      background-image: url('../../../assets/slide-3.jpeg');
+    }
+  
+    h3 {
+      font-size: 24px;
+    }
+  
+    .animated-button {
+      padding: 10px 18px;
+      font-size: 16px;
+    }
+  }
+  
+  /* 📌 Large Devices (769px and above) */
+  @media (min-width: 769px) {
+    .slide {
+      height: 70vh; /* Full height for large screens */
+    }
+  
+    h3 {
+      font-size: 28px;
+    }
+  
+    .animated-button {
+      padding: 12px 20px;
+      font-size: 18px;
+    }
+  }
+  
+
+  /* ------------------------------------------- */
+
+  /* Container Styling */
+.skin-care-container {
+    padding: 40px 0;
+  }
+  
+  /* Image Styling */
+  .image-col {
+    display: flex;
+    justify-content: center;
+  }
+  
+  .skincare-img {
+    height: 500px;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+  }
+  
+  /* About Us Button */
+  .about-btn {
+    text-transform: uppercase;
+    border: none;
+    background-color: rgba(230, 97, 126, 0.24)!important;
+    color:  rgba(241, 61, 100, 0.603)!important;
+    padding: 12px 24px;
+    font-size: 18px!important;
+    margin-bottom: 15px!important;
+    transition: 0.3s;
+    cursor: pointer;
+
+  }
+  
+  .about-btn:hover {
+    background-color: rgba(245, 37, 82, 0.603) !important;
+    color: white !important;
+  }
+  
+  /* Heading */
+  .heading {
+    font-size: 45px !important;
+    font-weight: bold;
+    margin-bottom: 15px!important;
+  }
+  
+  /* Description Paragraph */
+  .SKIN-P {
+    color: grey;
+    border-left: 2px solid  rgba(230, 97, 126, 0.801)!important;
+    padding-left:  20px !important;
+    padding-right:  60px !important;
+    text-align: left;
+    word-spacing: 1px!important;
+  }
+  
+  /* Stats Row */
+  .stats-row {
+    display: flex;
+    flex-wrap: wrap;
+    text-align: center;
+    margin-left: 10px!important;
+    gap: 30px;
+  }
+  
+  /* First Stat Box */
+  .stat-box:first-child {
+    background-color: rgba(230, 97, 126, 0.24)!important; 
+    padding: 20px;
+    border-radius: 10px;
+  }
+  
+  .stat-box:first-child h3 {
+    color:  rgba(241, 61, 100, 0.603)!important;
+    font-size: 32px;
+    font-weight: bold;
+  }
+  
+  .stat-box:first-child p {
+    color: black;
+    font-size: 18px;
+  }
+  
+  /* Second Stat Box */
+  .stat-box:nth-child(2) {
+    background-color: rgba(230, 97, 126, 0.24)!important; 
+    padding: 20px;
+    border-radius: 10px;
+  }
+  
+  .stat-box:nth-child(2) h3 {
+    color:  rgba(241, 61, 100, 0.603)!important;
+    font-size: 32px;
+    font-weight: bold;
+  }
+  
+  .stat-box:nth-child(2) p {
+    color: black;
+    font-size: 18px;
+  }
+  
+  /* Responsive Styles */
+  @media (max-width: 768px) {
+    .skincare-img {
+      height: 500px !important;
+      object-fit: cover;
+      border-radius: 10px;
+    }
+  
+    .heading {
+      font-size: 24px;
+    }
+  
+    .stat-box h3 {
+        font-size: 28px;
+      }
+      .stat-box p {
+        font-size: 15px !important;
+      }
+
+  }
+  
+  @media (max-width: 425px) {
+    /* Prevent horizontal scrolling */
+    body, html {
+      overflow-x: hidden !important;
+    }
+  
+    .image-col {
+      text-align: center; /* Centers the image */
+      margin-bottom: 20px;
+    }
+  
+    .skincare-img {
+      max-width: 100% !important; /* Ensures image does not overflow */
+      height: auto;
+      display: block;
+      margin: 0 auto;
+    }
+  
+    .about-btn {
+      width: 60% !important; /* Makes button full width */
+      text-align: center;
+      display: block;
+      margin-bottom: 10px;
+    }
+  
+    .heading {
+      font-size: 1.5rem; /* Adjust heading size */
+      text-align: center;
+    }
+  
+    .SKIN-P {
+      font-size: 0.9rem;
+      text-align: center;
+      padding: 0 15px; /* Avoid content touching edges */
+    }
+  
+    .stats-row {
+      flex-direction: column !important; /* Stack stats in a column */
+      align-items: center !important;
+      justify-content: center;
+      width: 100% !important;
+    }
+  
+    .stat-box {
+      width: 100% !important; /* Makes stats take full width */
+      text-align: center;
+      margin-bottom: 10px;
+    }
+  
+    /* Ensure no extra margins or padding cause overflow */
+    * {
+      box-sizing: border-box;
+      max-width: 100% !important;
+    }
+  }
+  
+  /* ----------------------------- */
+
+   /* About Us Button */
+   .Row-2 {
+    text-transform: uppercase;
+    border: none;
+    background-color: rgba(230, 97, 126, 0.11)!important;
+    color:  rgba(241, 61, 100, 0.603)!important;
+    padding: 12px 24px;
+    font-size: 18px!important;
+    /* font-weight: bold!important; */
+    margin-bottom: 15px!important;
+    transition: 0.3s;
+    cursor: pointer;
+
+  }
+  
+  .Row-2:hover {
+    background-color: rgba(245, 37, 82, 0.603) !important;
+    color: white !important;
+  }
+
+  /* ------------------ */
+
+  .bold-heading {
+    font-weight: bold;
+ }
+
+ /* ------------------------- */
+
+ .custom-card {
+    position: relative;
+    width: 300px !important;
+    height: 300px !important; /* Adjust height as needed */
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end; /* Align text & button at the bottom */
+    align-items: center;
+    text-align: center;
+    color: white !important;
+    font-weight: bold !important;
+    overflow: hidden;
+  }
+
+.custom-card:hover {
+    transform: translateY(-10px);
+}
+
+.card-body {
+    position: relative;
+    z-index: 1;
+    width: 100%;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end; /* Keeps text & button at the bottom */
+    align-items: center;
+    transition: transform 0.3s ease-in-out;
+  background-color: none  !important;
+  }
+
+  .card-image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-size: cover !important;
+    background-position: center !important;
+    background-repeat: no-repeat !important;
+    z-index: 0;
+  }
+  .card-body-tittle{
+    color: black !important;
+    font-size: 18px;
+    font-weight: bold !important; 
+    text-transform: uppercase;
+  }
+
+.card-title {
+    font-size: 18px;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin-top: 10px;
+}
+
+.card-text {
+    font-size: 12px;
+    padding: 0 10px;
+    word-spacing: 1px !important;
+}
+
+/* Initially Hide Button */
+.hidden-button {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.3s ease-in-out, transform 0.3s ease-in-out;
+    background-color: rgba(230, 97, 126, 0.644) !important;
+    color: white !important;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 14px;
+    margin-top: 10px;
+  }
+
+/* Show Button on Hover */
+.custom-card:hover .hidden-button {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* ---------------------------------------- */
+  
+  .custom-avatar {
+    width: 50px !important;
+    height: 50px !important;
+  }
+  
+  .custom-h5 {
+    font-weight: bold !important;
+  }
+  
+  .text-grey {
+    color: grey !important;
+  }
+  
+  .testimonial-carousel-1 {
+    background-color: white !important;
+    border-radius: 10px; 
+    max-height: 200px !important; /* Set the max height for the carousel */
+    overflow: hidden; 
+  }
+  
+  .carousel-item-1 {
+    background-color: white !important;
+    padding: 20px;
+    border-radius: 10px;
+    height: 200px !important; 
+  }
+  
+  
+  .carousel-control-prev,
+  .carousel-control-next {
+    filter: invert(100%); /* Makes controls visible */
+  }
+  
+  .skincare-img-1 {
+    height: 400px !important;
+    width: 100% !important;
+    object-fit: cover !important;
+    border-radius: 10px;
+  }
+
+  @media (max-width: 768px) {
+    
+    .image-col {
+      text-align: center !important;
+    }
+  
+    .skincare-img-1 {
+      width: 100% !important;  /* Ensure full width */
+      height: 100% !important; /* Cover the container */
+      object-fit: cover !important; /* Ensures image covers without distortion */
+      display: block;
+    }
+  }
+  
+  @media (max-width: 425px) {
+    .skincare-img-1 {
+      height: auto !important; /* Maintain aspect ratio on smaller screens */
+      max-width: 100% !important;
+    }
+  }
+  

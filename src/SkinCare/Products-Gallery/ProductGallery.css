@@ -1,0 +1,94 @@
+.product-card {
+    background-color: rgba(255, 255, 255, 0.062) !important;
+    border: none;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
+    overflow: hidden;
+  }
+  
+  .product-card:hover {
+    transform: translateY(-5px);
+  }
+  
+  .image-container {
+    height: 200px;
+    overflow: hidden;
+  }
+  
+  .product-image-bg {
+    width: 100%;
+    height: 250px; /* Adjust height as needed */
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    border-radius: 8px 8px 0 0; /* Rounded corners for top */
+  }
+  
+  .product-title {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 5px;
+  }
+  
+  .product-sub {
+    font-size: 14px;
+    color: gray;
+  }
+  .card-body {
+    /* background-color: rgba(255, 255, 255, 0.096) !important; */
+    color: white; /* Ensures text is visible on red background */
+    padding: 15px;
+    border-radius: 0 0 8px 8px; /* Keeps bottom corners rounded */
+  }
+    /* ---------------------------------------- */
+
+    
+
+*::-webkit-scrollbar {
+  width: 0;
+  height: 0;
+  display: none;
+}
+
+* {
+  scrollbar-width: none; /* Firefox */
+  -ms-overflow-style: none; /* IE/Edge */
+}
+
+/* ----------------- */
+.Dashmain-Findmain-1 {
+  background-color: white !important;
+  box-shadow: none !important;
+  height: 91vh;
+  width: 94vw;
+  flex-grow: 1;
+  display: flex;
+  position: relative;
+  overflow-y: auto;
+  flex-wrap: wrap;
+   margin-top: 65px;
+   align-items: center;
+   justify-content: center;
+}
+
+/* ✅ For screens 320px to 345px */
+@media (max-width: 345px) {
+  .Dashmain-Findmain-1 {
+    width: 100vw;  /* Full width */
+    margin-top: 10px; /* Reduce margin */
+    height: auto; /* Adjust height if necessary */
+    flex-wrap: nowrap; /* Prevent wrapping if space is small */
+  }
+}
+
+/* ✅ For screens up to 768px (tablets) */
+@media (max-width: 768px) {
+  .Dashmain-Findmain-1 {
+    width: 90vw; /* Adjust width */
+    margin-top: 80px; /* Adjust margin */
+    height: auto; /* Slightly smaller height */
+  }
+}
+.Box-1-1{
+  display: flex;
+}

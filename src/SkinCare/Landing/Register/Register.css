@@ -1,0 +1,142 @@
+/* Reset styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  /* Centering the Register Form */
+  .register-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Full height of the viewport */
+    width: 100vw; /* Full width of the viewport */
+    background-image: url(../../../assets/landb.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center; /* Ensures proper centering */
+    padding: 20px;
+  }
+  
+  /* Responsive Card */
+  .register-card {
+    background-color:white!important; /* Red with opacity */
+    padding: 20px;
+    max-width: 380px;
+    width: 90%;
+    text-align: center;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.158)!important;
+    border-radius: 15px!important;
+    /* backdrop-filter: blur(10px); */
+  }
+  
+  /* Title */
+  /* .register-title {
+    margin-bottom: 15px;
+    color:black;
+    font-size: 22px;
+    font-weight: bold;
+  } */
+   /* Title Styling */
+.register-title {
+  color: rgba(245, 58, 136, 0.9);
+  font-size: 22px;
+  font-weight: bold;
+  text-align: center;
+}
+
+/* Aligning Labels to the Left */
+.form-group {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  width: 100%;
+  margin-bottom: 10px;
+}
+.form-group label {
+  font-size: 14px;
+  font-weight: bold;
+  color: rgba(0, 0, 0, 0.808);
+  margin-bottom: 5px;
+}
+
+/* Responsive Design */
+@media (max-width: 480px) {
+  .register-card {
+    width: 100%;
+    padding: 15px;
+  }
+
+  .register-title {
+    font-size: 20px;
+  }
+}
+
+  
+  .formReg{
+    margin-top: 10px;
+  }
+
+  /* Form fields */
+  .MuiTextField-root {
+    /* margin-bottom: 15px !important;
+    background-color: rgba(255, 255, 255, 0.9);
+    border-radius: 5px; */
+    height: 20px !important;
+  }
+  .MuiInputBase-root {
+    height: 120px !important;  /* Controls input field height */
+    font-size: 12px !important; /* Adjust text size */
+    padding: 2px 5px !important; /* Adjust padding */
+  }
+  .MuiOutlinedInput-input {
+    height: 20px !important;
+    padding: 5px 5px !important;
+    font-size: 12px !important;
+  }
+  
+  /* Register Button */
+  .register-button {
+    background-color: rgba(226, 34, 114, 0.9) !important;
+    color: white !important;
+    padding: 10px !important;
+    font-size: 16px !important;
+    font-weight: bold !important;
+    margin-top: 10px !important;
+    transition: 0.3s ease-in-out !important;
+    margin-bottom: 10px !important;
+  }
+  
+  .register-button:hover {
+    background-color: white !important;
+    color: rgba(245, 58, 136, 0.9) !important;
+    border: 2px solid rgba(245, 58, 136, 0.9) !important;
+  }
+  
+  /* Login Link */
+  /* .register-login-link {
+    margin-top: 10px;
+    font-size: 14px;
+    color: white;
+  } */
+  
+  .register-login-link  {
+    color:grey;
+    /* font-weight: bold; */
+    margin-top: 10px;
+    font-size: 12px !important;
+  }
+  .register-span{
+    color:black;
+    cursor: pointer;
+    font-weight: bold;
+    margin-top: 10px;
+    font-size: 13px !important;
+
+  }
+  
+  .register-span:hover {
+    text-decoration: underline;
+  }
+  

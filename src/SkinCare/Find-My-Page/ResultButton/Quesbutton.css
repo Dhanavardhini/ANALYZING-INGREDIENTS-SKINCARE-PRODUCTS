@@ -1,0 +1,58 @@
+.Acne-Findmain {
+    background-image: url(../../../assets/bg.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover  ;
+    box-shadow: none !important;
+    height: 100vh;
+    width: 94vw;
+    flex-grow: 1;
+    display: flex;
+    position: relative;
+    overflow-y: auto;
+    flex-wrap: wrap;
+     margin-top: 0px !important;
+     align-items: center;
+     justify-content: center;
+  }
+  
+  /* ✅ For screens 320px to 345px */
+  @media (max-width: 345px) {
+    .Ance-Findmain {
+      width: 100vw;  
+      height: 90vh !important; 
+      flex-wrap: nowrap; 
+    }
+  }
+  
+  /* ✅ For screens up to 768px (tablets) */
+  @media (max-width: 768px) {
+    .Acne-Findmain {
+      width: 90vw; /* Adjust width */
+      margin-top: 10px !important; 
+      height: 99vh !important; /* Slightly smaller height */
+    }
+  }
+
+
+.row-1{
+    color: black;
+}
+.acne-img{
+        display: block;
+        max-width: 100%;
+        height: 400px !important;
+        margin-top: 0px !important; /* Ensure no margin is applied */       
+} 
+.enlarged-pores-img,.darkCirclesTreatment,.tanned-skin-img,.fine-lines-img,.dark-lips-img,.smooth-skin-img{
+    display: block;
+    max-width: 100%;
+    height: 500px !important;
+    margin-top: 0px !important;
+}
+.skin-type-img{
+    display: block;
+    max-width: 100%;
+    height: 400px !important;
+    margin-top: 0px !important;
+    
+}

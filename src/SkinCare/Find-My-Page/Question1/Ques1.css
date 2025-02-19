@@ -1,0 +1,194 @@
+/* 🌎 Global Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* 🏡 Main Container */
+.ques1-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px; /* Ensures padding on small screens */
+}
+
+/* 📌 Card Styling */
+.ques1-card {
+    background: white !important;
+    padding: 20px;
+    border-radius: 18px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.438);
+    width: 100%;
+    min-width: 400px; /* Keeps the card from being too wide on desktops */
+}
+
+/* 📝 Heading */
+.ques1-heading {
+    text-align: center;
+    color: #333;
+    font-size: 1.6rem;
+    margin-bottom: 15px;
+}
+
+/* 📍 Form Row */
+.ques1-row {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 12px;
+}
+
+/* 🔖 Labels */
+.ques1-label {
+    font-size: 0.95rem;
+    font-weight: bold;
+    color: #555;
+    margin-bottom: 5px;
+}
+
+/* 🖊️ Input Fields & Dropdown */
+.ques1-input,
+.ques1-dropdown {
+    width: 100%;  /* ✅ Full width */
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 0.95rem;
+}
+
+/* 🔘 Radio Button Group */
+.ques1-radio-group {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+.ques1-radio-group label {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    font-size: 1rem;
+    color: #444;
+}
+
+/* 🚀 Next Button */
+.ques1-button-container {
+    display: flex;
+    justify-content: right;
+    margin-top: 10px;
+}
+
+.ques1-button {
+    background-color: #e4508f;
+    color: white;
+    font-size: 1rem;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+.ques1-button:hover {
+    background-color: #c43c76;
+}
+
+/* ✅ Responsive for Tablets & Small Laptops (max-width: 768px) */
+@media (max-width: 768px) {
+  
+    .ques1-card {
+        margin-top: 30px;
+        max-width: 90%;
+        padding: 18px;
+        margin-bottom: 40px;
+    }
+
+    .ques1-heading {
+        font-size: 1.4rem;
+    }
+
+    .ques1-label {
+        font-size: 0.9rem;
+    }
+
+    .ques1-input,
+    .ques1-dropdown {
+        font-size: 0.9rem;
+    }
+
+    .ques1-button {
+        font-size: 0.95rem;
+        padding: 9px 18px;
+    }
+}
+
+/* 📱 Super Responsive for Mobile Devices (max-width: 480px) */
+@media (max-width: 480px) {
+    .ques1-container {
+        padding: 10px;
+        margin-top: 10px;
+        margin-bottom: 20px;
+    }
+
+    .ques1-card {
+        padding: 12px;
+        min-width: 240px;
+    }
+
+    .ques1-heading {
+        font-size: 1.3rem;
+    }
+
+    .ques1-label {
+        font-size: 0.9rem;
+    }
+
+    .ques1-input,
+    .ques1-dropdown {
+        font-size: 0.85rem;
+        padding: 7px;
+    }
+
+    .ques1-button {
+        font-size: 0.9rem;
+        padding: 8px 16px;
+    }
+}
+
+/* ✅ Ultra Responsive for Smallest Screens (max-width: 320px) */
+@media (max-width: 320px) {
+    .ques1-container {
+        padding: 10px;
+        margin-top: 10px;
+        margin-bottom: 20px;
+    }
+
+    .ques1-card {
+        padding: 12px;
+        min-width: 240px;
+    }
+
+    .ques1-heading {
+        font-size: 1.2rem;
+    }
+
+    .ques1-label {
+        font-size: 0.85rem;
+    }
+
+    .ques1-input,
+    .ques1-dropdown {
+        font-size: 0.8rem;
+        padding: 6px;
+    }
+
+    .ques1-button {
+        font-size: 0.85rem;
+        padding: 7px 14px; /* ✅ Tap-friendly */
+    }
+}
+.ques1-button:disabled {
+    background-color: palevioletred;
+    cursor: not-allowed;
+  }
+  

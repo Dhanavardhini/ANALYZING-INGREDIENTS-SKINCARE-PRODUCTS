@@ -1,0 +1,130 @@
+/* Reset styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Centering the Login Form */
+.login-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh; /* Full height of the viewport */
+  width: 100vw; /* Full width of the viewport */
+  background-image: url(../../../assets/landb.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center; /* Ensures proper centering */
+  padding: 20px;
+}
+
+/* Responsive Card */
+.login-card {
+  background-color: white !important; /* Dark background with opacity */
+  padding: 20px;
+  max-width: 400px;
+  width: 90%;
+  text-align: center;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.158)!important;
+  border-radius: 15px!important;
+  /* backdrop-filter: blur(10px); */
+}
+
+/* Title */
+.login-title {
+  margin-bottom: 10px !important;
+  color: rgba(245, 58, 136, 0.9);
+  font-size: 29px;
+  font-weight: bold;
+}
+
+/* Centered subtitle with light pink color */
+.login-subtitle {
+  margin-bottom: 10px !important;
+  text-align: center;
+  color: rgba(245, 58, 136, 0.603);
+  font-size: 13px !important;
+}
+
+/* Form */
+.login-form {
+  margin-top: 5px;
+}
+
+/* Form group (Label + Input) */
+.form-group {
+  margin-bottom: 25px !important;
+  text-align: left;
+}
+
+/* Labels aligned to the left and light black */
+.form-label {
+  display: block;
+   font-size: 14px;
+  font-weight: bold;
+  color: rgba(0, 0, 0, 0.808);
+  }
+
+/* Input fields */
+.MuiTextField-root {
+  margin-bottom: 5px !important;
+  /* background-color: rgba(255, 255, 255, 0.9); */
+  border-radius: 5px;
+}
+
+/* Forgot Password (Right aligned) */
+.login-forgot-password {
+  text-align: right;
+  /* font-size: 12px !important; */
+  margin-bottom: 10px !important;
+}
+
+.login-span {
+  color:black;
+  cursor: pointer;
+  font-size: 13px !important;
+  font-weight: bold;
+}
+
+.login-span:hover {
+  text-decoration: underline;
+}
+
+/* Login Button */
+.login-button {
+  background-color: rgba(226, 30, 79, 0.9) !important;
+  color: white !important;
+  padding: 10px !important;
+  font-size: 16px !important;
+  font-weight: bold !important;
+  margin-bottom: 5px !important;
+  transition: 0.3s ease-in-out !important;
+  text-transform: capitalize !important;
+}
+
+.login-button:hover {
+  background-color: white !important;
+  color: rgba(226, 30, 79, 0.9) !important;
+  border: 2px solid rgba(226, 30, 79, 0.9) !important;
+}
+
+/* Register Link (Light Blue Color) */
+.login-register-link {
+  margin-top: 5px;
+  font-size: 12px !important;
+  color:grey !important;
+
+}
+
+.register-span {
+  color:black !important;
+  cursor: pointer;
+  font-weight: bold;
+  font-size: 13px!important;
+
+}
+
+.register-span:hover {
+  text-decoration: underline;
+}

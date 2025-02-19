@@ -1,0 +1,198 @@
+/* Dashboard.css */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+/* Main container */
+.dashboard-container {
+  transition: width 0.3s ease-in-out;
+  background-color: #f3408e;
+  }
+  
+  /* App bar styles */
+  .dashboard-App {
+    position: fixed !important; /* Keeps the AppBar fixed */
+    top: 0;
+    left: 0;
+    width: 100%;
+    /* z-index: 1100; Ensures it stays above other elements */
+    background-color: #f3408e !important;
+    display: flex;
+    flex-wrap: wrap!important;
+  }
+
+  
+  /* Toolbar */
+  .Toolbar-1 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+  }
+  
+  .dash-icon-button {
+    margin-right: 20px; 
+  }
+  
+
+  /* Menu Icon Styles */
+.dash-menu-icon {
+  font-size: 30px !important; /* Set the icon size */
+  color: white; /* Change icon color if needed */
+  transition: transform 0.3s ease-in-out;
+}
+
+  
+.skinlogo{ 
+  max-width: 100px;
+  height: 60px;
+  margin-left: 20px;
+}
+
+.skin-right-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-end; /* Align items to the right */
+}
+.nav-button{
+  color: white !important;
+  font-weight: bold!important;
+}
+
+/* Responsive adjustments */
+@media (max-width: 600px) {
+  .skin-right-container {
+    justify-content: center; /* Center items on smaller screens */
+  }
+  .dashboard-App {
+    position: fixed !important; /* Keeps the AppBar fixed */
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1100; /* Ensures it stays above other elements */
+    background-color: #f3408e !important;
+    display: flex;
+    flex-wrap: wrap!important;
+  }
+}
+
+
+  /* Title */
+  .dashboard-title {
+    font-size: 1.3rem;
+    color: #5E686D;
+  }
+  
+  /* Menu button */
+  .menu-button {
+    display: flex;
+    align-items: center;
+  }
+  
+  .menu-button.hidden {
+    display: none;
+  }
+  
+  .menu-icon-box {
+    background-color: #001F3F;
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  /* Sidebar (Drawer) */
+  .drawer {
+    width: 240px;
+    transition: width 0.3s ease-in-out;
+    background-color: #f3408e;
+  }
+  
+  .drawer-closed {
+    width: 72px;
+  }
+  
+  .drawer-open {
+    width: 240px;
+  }
+  
+  /* Sidebar links */
+  .drawer-link {
+    text-decoration: none;
+    color: white;
+  }
+  
+  /* Sidebar icons */
+  .icon {
+    width: 20px;
+    height: 20px;
+  }
+  
+  .logout-icon {
+    font-size: 28px;
+    margin-top: 55.5vh;
+  }
+  
+  /* Sidebar text */
+  .drawer-text {
+    color: white;
+  }
+  
+  /* Main content */
+  .main-content {
+    flex-grow: 1;
+    padding: 20px;
+  }
+
+  /* Global styles to hide scrollbars */
+*::-webkit-scrollbar {
+  width: 0;
+  height: 0;
+  display: none;
+}
+
+* {
+  scrollbar-width: none; /* Firefox */
+  -ms-overflow-style: none; /* IE/Edge */
+}
+
+/* ----------------- */
+.Dashmain {
+  box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.2);
+  height: auto;
+  width: 94vw;
+  flex-grow: 1;
+  display: flex;
+  position: relative;
+  overflow-y: auto;
+  flex-wrap: wrap;
+   margin-top: 63px;
+}
+
+/* ✅ For screens 320px to 345px */
+@media (max-width: 345px) {
+  .Dashmain {
+    width: 100vw;  /* Full width */
+    margin-top: 10px; /* Reduce margin */
+    height: auto; /* Adjust height if necessary */
+    flex-wrap: nowrap; 
+  }
+}
+
+/* ✅ For screens up to 768px (tablets) */
+@media (max-width: 768px) {
+  .Dashmain {
+    width: 90vw; 
+    margin-top: 60px;
+    height: auto; 
+  }
+}
+.Box-1{
+  display: flex;
+}
+
