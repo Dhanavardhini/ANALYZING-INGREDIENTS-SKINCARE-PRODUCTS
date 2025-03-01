@@ -21,36 +21,36 @@ export default function HomePage() {
     {
       id: 1,
       title: "DAILY ROUTINE",
-      text: "It's like tending your garden. Nurture it consistently for beautiful blooms",
+      text: " Nurture it consistently for beautiful blooms",
       image: service1, 
     },
     {
       id: 2,
       title: "WEEKLY ROUTINE",
-      text: "Your skin remembers. Show it consistent love with a dedicated routine",
+      text: "Show it consistent love with a dedicated routine",
       image: service2, 
     },
     {
       id: 3,
       title: "FACE MASKING",
-      text: "It gives your skin the extra boost it needs to stay healthy and radiant",
+      text: "It gives your skin stay healthy and radiant",
       image:service3, 
     },
     {
       id: 4,
       title: "DAILY ROUTINE",
-      text: "It's like tending your garden. Nurture it consistently for beautiful blooms",
+      text: "Nurture it consistently for beautiful blooms",
       image: service6, 
     },
     {
       id: 5,
       title: "WEEKLY ROUTINE",
-      text: "Your skin remembers. Show it consistent love with a dedicated routine",
+      text: "Show it consistent love with a dedicated routine",
       image: service7, 
     }, {
       id: 6,
       title: "FACE MASKING",
-      text: "It gives your skin the extra boost it needs to stay healthy and radiant",
+      text: "It gives your skin stay healthy and radiant",
       image: service4, 
     },
   ];
